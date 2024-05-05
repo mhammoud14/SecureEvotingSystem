@@ -85,8 +85,7 @@ To add a block to the chain, we'll first have to verify that the data is untampe
 The transactions will be initially stored as a pool of unconfirmed transactions. The process of putting the unconfirmed transactions in a block and computing Proof of Work is known as the mining of blocks. Once the nonce satisfying our constraints is figured out, we can say that a block has been mined, and it can be put into the chain.
 
 
-
-4. Conclusion:
+Conclusion:
 
 The proposed system supports strong user verification through the face recognition followed by the following features offered by the blockchain implementation:
 Authentication: Only people already registered to vote can cast a vote. Our system will not support a registration process. Registration usually requires verification of certain information and documents to comply with current laws, which could not be done online in a secure manner. Therefore, the system should be able to verify voters’ identities against a previously verified database, and then let them vote only once.
