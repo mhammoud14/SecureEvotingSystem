@@ -83,103 +83,10 @@ The very first block is called the genesis block and can be generated either man
 If we change the previous block, we can re-compute the hashes of all the following blocks quite easily and create a different valid blockchain. To prevent this, we will now exploit the asymmetry in efforts of hash functions that we discussed previously to make the task of calculating the hash difficult and random. Here's how we do this. Instead of accepting any hash for the block, we add some constraint to it. Let's add a constraint that our hash should start with "n leading zeroes" where n can be any positive integer.
 To add a block to the chain, we'll first have to verify that the data is untampered i.e., the Proof of Work provided is correct, and the order of transactions is preserved i.e., the previous_hash field of the block to be added points to the hash of the latest block in our chain.
 The transactions will be initially stored as a pool of unconfirmed transactions. The process of putting the unconfirmed transactions in a block and computing Proof of Work is known as the mining of blocks. Once the nonce satisfying our constraints is figured out, we can say that a block has been mined, and it can be put into the chain.
-4. Experiments and Results:
 
-Credential Login : 
 
 
-Missing Username : 
-
-
-
-
-
-Missing Password : 
-
-Invalid Username : 
-
-
-
-
-
-
-
-
-Wrong Password : 
-
-Successful Login : 
-Upon a successful login , the user is sent to a page to confirm their identity via face recognition .
-
-
-
-
-
-
-
-
-
-
-Face Recognition : 
-Not Clear Photo ( missing a face or unclear face) : 
-
-Wrong Face : 
-
-Correct Face : 
-
-Voting System : 
-Admin Page : 
-
-
-User Page : 
-
-Admin Adding a Survey : 
-
-
-Survey Transaction : 
-
-Survey Block Mined : 
-
-
-
-
-
-
-
-Survey Visible to Admin : 
-
-Survey Visible to User : 
-
-
-
-
-
-
-
-
-
-User Vote Transaction : 
-
-User Vote Block Mined : 
-
-Vote Confirmation Visible to User : 
-
-
-
-
-
-
-
-
-Vote Count Visible to Admin : 
-
-User Trying to Change Vote Upon Confirmation Transaction : 
-
-User Vote Block Rejected :
-
-
-
-
-5. Conclusion:
+4. Conclusion:
 
 The proposed system supports strong user verification through the face recognition followed by the following features offered by the blockchain implementation:
 Authentication: Only people already registered to vote can cast a vote. Our system will not support a registration process. Registration usually requires verification of certain information and documents to comply with current laws, which could not be done online in a secure manner. Therefore, the system should be able to verify voters’ identities against a previously verified database, and then let them vote only once.
